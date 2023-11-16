@@ -1,0 +1,241 @@
+/* Header */
+.large-header {
+	position: relative;
+	width: 100%;
+	background: #333;
+	overflow: hidden;
+	background-size: cover;
+	background-position: center center;
+	z-index: 0;
+}
+
+.main-title {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 6%;
+	left: 87%;
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
+	font-size: 4.2em;
+	letter-spacing: 0.1em;
+}
+
+.main-title1 {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 20%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
+	font-size: 2.0em;
+	letter-spacing: 0.1em;
+}
+.main-title2 {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f9f1e9;
+	text-align: center;
+	top: 35%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
+	font-size: 2.0em;
+	letter-spacing: 0.1em;
+}
+.main-title3 {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f3d7ba;
+	text-align: center;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
+	font-size: 2.0em;
+	letter-spacing: 0.1em;
+}
+
+.main-title4 {
+	position: absolute;
+	margin: 0;
+	padding: 0;
+	color: #f3d7ba;
+	text-align: center;
+	top: 70%;
+	left: 50%;
+	-webkit-transform: translate3d(-50%, -50%, 0);
+	transform: translate3d(-50%, -50%, 0);
+	font-size: 1.0em;
+	letter-spacing: 0.1em;
+}
+
+.image1{
+	position: absolute;
+	width: 200px;
+	height: 200px;
+	top: 0%;
+	left: 0%;
+	z-index:1;
+}
+
+.demo-1 .large-header {
+	background-image: url('../img/demo-1-bg.jpg');
+}
+
+
+/* 样式按钮的外观 */
+.custom-button {
+	position: absolute;
+	width: 150px;
+	height: 50px;
+	top: 20%;
+	left: 57%;
+	z-index: 1;
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #3498db;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s; 
+}
+
+/* 按钮悬停效果 */
+.custom-button:hover {
+	background-color: #2980b9;
+}
+
+/* 按钮激活效果 */
+.custom-button:active {
+	background-color: #17547b;
+}
+
+/* 按钮禁用效果 */
+.custom-button[disabled] {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+
+/* 可以根据需要自定义其他样式，比如阴影、边框等 */
+
+/* 示例中使用的文本对齐方式 */
+.button-text {
+	text-align: center;
+}
+
+
+.custom-button1 {
+	position: absolute;
+	width: 150px;
+	height: 50px;
+	top: 40%;
+	left: 57%;
+	z-index: 1;
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #3498db;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s;
+}
+
+/* 按钮悬停效果 */
+.custom-button1:hover {
+	background-color: #2980b9;
+}
+
+/* 按钮激活效果 */
+.custom-button1:active {
+	background-color: #17547b;
+}
+
+/* 按钮禁用效果 */
+.custom-button1[disabled] {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+
+
+.custom-button2 {
+	position: absolute;
+	width: 150px;
+	height: 50px;
+	top: 60%;
+	left: 57%;
+	z-index: 1;
+	display: inline-block;
+	padding: 10px 20px;
+	background-color: #3498db;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	font-size: 16px;
+	transition: background-color 0.3s;
+}
+
+/* 按钮悬停效果 */
+.custom-button2:hover {
+	background-color: #2980b9;
+}
+
+/* 按钮激活效果 */
+.custom-button2:active {
+	background-color: #17547b;
+}
+
+/* 按钮禁用效果 */
+.custom-button2[disabled] {
+	background-color: #ccc;
+	cursor: not-allowed;
+}
+
+
+.custom-text {
+	position: absolute;
+	width: 400px;
+	height: 50px;
+	top: 20%;
+	left: 30%;
+	z-index: 1;
+}
+.custom-text1 {
+	position: absolute;
+	width: 400px;
+	height: 50px;
+	top: 40%;
+	left: 30%;
+	z-index: 1;
+}
+.custom-text2 {
+	position: absolute;
+	width: 400px;
+	height: 50px;
+	top: 60%;
+	left: 30%;
+	z-index: 1;
+}
+.custom-file {
+	position: absolute;
+	width: 400px;
+	height: 50px;
+	top: 30%;
+	left: 23%;
+	z-index: 1;
+	display: none;
+}
+
+

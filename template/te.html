@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Music_Copyright</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="./css/demo.css" />
+    <link rel="stylesheet" type="text/css" href="./css/component.css" />
+</head>
+
+<body>
+    <div class="demo-1">
+        <div class="content">
+            <div id="large-header" class="large-header">
+                <canvas id="demo-canvas"></canvas>
+            </div>
+        </div>
+    </div>
+
+    <a class="main-title" href="https://sepolia.etherscan.io/txs">EtherScan</a>
+    <img src="./img/music-two-color.svg" class="image1">
+
+    <a class="main-title1">the author of file you queried is {{.author}}</a>
+    <a class="main-title4">if the author is address(0),please wait for half a minute and try it again,because the transaction need time to be packaged and deployed to blockchain</a>
+
+
+    <script src="./js/TweenLite.min.js"></script>
+    <script src="./js/EasePack.min.js"></script>
+    <script src="./js/rAF.js"></script>
+    <script src="./js/demo-1.js"></script>
+</body>
+
+</html>

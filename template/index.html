@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="UTF-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+<meta name="viewport" content="width=device-width, initial-scale=1"> 
+<title>Music_Copyright</title>
+
+<link rel="stylesheet" type="text/css" href="./css/normalize.css" />
+<link rel="stylesheet" type="text/css" href="./css/demo.css" />
+
+<!--必要样式-->
+<link rel="stylesheet" type="text/css" href="./css/component.css" />
+
+<!--[if IE]>
+<script src="js/html5.js"></script>
+<![endif]-->
+</head>
+<body>
+		<div class="demo-1">
+			<div class="content">
+				<div id="large-header" class="large-header">
+					<canvas id="demo-canvas"></canvas>
+				</div>
+			</div>
+		</div>
+
+		<a class="main-title" href="https://sepolia.etherscan.io/txs">EtherScan</a>
+		<img src="./img/music-two-color.svg" class="image1">
+
+    <form action="/tx"method="post"enctype="multipart/form-data">
+	<input type="text"id="user-input"name="user-input"class="custom-text" placeholder="upload file first,input your sk,type in Enter"disabled>
+    <input type="file" id="user-file" name="user-file"class="custom-file"></input>
+    <button type="button" class="custom-button" id="convert-button"onclick="btnclick()">Upload file</button>
+    <script>
+        function btnclick() {
+            document.getElementById("user-file").click();
+        }
+        // 获取file和text输入框
+        var fileInput = document.getElementById("user-file");
+        var textInput = document.getElementById("user-input");
+
+        fileInput.addEventListener("input", function () {
+            // 检查是否满足特定条件
+            if (fileInput.files[0].size>0) {
+                // 符合条件，允许输入
+                textInput.disabled = false;
+            } else {
+                // 不符合条件，禁止输入
+                textInput.disabled = true;
+            }
+        });
+        
+    </script>
+    </form>
+
+    <form action="/te"method="post"enctype="multipart/form-data">
+    <input type="text" id="query-input" name="query-input" class="custom-text1"placeholder="input your file cid">
+    <button type="submit" class="custom-button1" >Query author</button>
+    </form>
+
+    <form action="/download" method="post" enctype="multipart/form-data">
+        <input type="text" id="dinput" name="dinput" class="custom-text2" placeholder="input your file cid">
+        <button type="submit" class="custom-button2">Download file</button>
+    </form>
+
+	<script src="./js/TweenLite.min.js"></script>
+	<script src="./js/EasePack.min.js"></script>
+	<script src="./js/rAF.js"></script>
+	<script src="./js/demo-1.js"></script>
+</body>
+</html>
